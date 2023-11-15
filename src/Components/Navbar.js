@@ -1,19 +1,21 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+import '../Styles/Navbar.css'
 
 function MainNavbar() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
-            <Container>
-                <Navbar.Brand href="#home">Doherty's Mezzanine Flooring</Navbar.Brand>
+            <Container className='navbar-container'>
+                <Navbar.Brand href="/">Doherty's Mezzanine UK</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Gallery</Nav.Link>
-                        <Nav.Link href="#link">About Us</Nav.Link>
-                        <Nav.Link href="#link">Contact Us</Nav.Link>
+                    <Nav className="me-auto d-flex justify-content-between">
+                        <Nav.Link as={Link} to='/' className="text-dark mr-5">Home</Nav.Link>
+                        <Nav.Link as={Link} to='/Pages/ImagePage' className="text-dark mr-5">Gallery</Nav.Link>
+                        <Nav.Link as={Link} to='/Pages/AboutUsPage' className="text-dark mr-5">About Us</Nav.Link>
+                        <Nav.Link as={Link} to='/Pages/ContactUs' className="text-dark mr-5">Contact Us</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

@@ -1,5 +1,9 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagramSquare } from "react-icons/fa";
+
 import '../Styles/Footer.css'
 
 export default function Footer() {
@@ -11,23 +15,15 @@ export default function Footer() {
                 </div>
 
                 <div>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="facebook-f" />
+                    <a href='https://www.facebook.com' className='me-4 text-reset'>
+                        <FaFacebook />
                     </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="twitter" />
+                    <a href='https://www.twitter.com/' className='me-4 text-reset'>
+                    <FaTwitter />
                     </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="google" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="instagram" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="linkedin" />
-                    </a>
-                    <a href='' className='me-4 text-reset'>
-                        <MDBIcon fab icon="github" />
+                    <a href='https://www.instagram.com/' className='me-4 text-reset'>
+                    <FaInstagramSquare />
+
                     </a>
                 </div>
             </section>
@@ -37,7 +33,7 @@ export default function Footer() {
                     <MDBRow className='mt-3'>
                         <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
                             <h6 className='text-uppercase fw-bold mb-4'>
-                                <MDBIcon icon="gem" className="me-3" />
+                                <MDBIcon icon="gem" className="me-1" />
                                 Doherty mezzanine Flooring
                             </h6>
                             <p>
@@ -101,7 +97,7 @@ export default function Footer() {
 
             <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
                 © 2023 Copyright: 
-                <a className='text-reset fw-bold' href='#'>
+                <a className='text-reset fw-bold' href='https://www.google.co.uk/'>
                     CamDesigns
                 </a>
             </div>

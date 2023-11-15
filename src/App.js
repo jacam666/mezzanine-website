@@ -1,25 +1,23 @@
-import MainNavbar from './Components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Styles/HomePage.css'
 import './App.css';
-import Footer from './Components/Footer';
+import { Route, Routes } from 'react-router-dom';
+import ImagePage from './Pages/ImagePage';
+import AboutUsPage from './Pages/AboutUsPage';
+import ContactUs from './Pages/ContactUs';
+import HomePage from './Pages/HomePage';
 
 function App() {
   return (
     <div className="App">
-      < MainNavbar/>
-      <div className="row d-flex justify-content evenly">
-        <div className="col-md-4">
-          <img className='home-page-image img-fluid ' src='/OIP.jpeg' alt='mezzanine flooring' />
-        </div>
-        <div className="col-md-4">
-          <img className='home-page-image img-fluid ' src='/OIP.jpeg' alt='mezzanine flooring' />
-        </div>
-        <div className="col-md-4">
-          <img className='home-page-image img-fluid ' src='/OIP.jpeg' alt='mezzanine flooring' />
-        </div>
-      </div>
-      <Footer />
+      
+
+      <Routes>
+      <Route path="/" element={<HomePage /> }/>
+        <Route path="/Pages/ImagePage" element={<ImagePage /> }/>
+        <Route path="/Pages/AboutUsPage" element={<AboutUsPage /> }/>
+        <Route path="/Pages/ContactUs" element={<ContactUs /> }/>
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,54 @@
+/* .about-us-container {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/public/Images/Mezzanine-Floor-construction-7-1024x768.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.about-us-description {
+    border: 1px solid black;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    color: #000;
+} */
+
+.about-us-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('/public/Images/Mezzanine-Floor-construction-7-1024x768.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.6; 
+    z-index: -1; 
+}
+
+.about-us-description {
+    position: relative; 
+    z-index: 1;
+    border: 1px solid black;
+    width: 90vw;
+    margin: auto;
+    margin-top: 5px;
+    padding: 3px;
+    border-radius: 5px;
+    color: #000; /* Set the text color to a darker color */
+    /* Add other styles for text as needed */
+}
+
