@@ -2,7 +2,7 @@ import React from 'react'
 
 function HomePage() {
     return (
-        <div>
+        <div className='homepage-container'>
             <div className="row d-flex justify-content-between">
                 <div className="col-md-6">
                     <img className='home-page-image img-fluid mt-1' src='Images/R_edited.jpg' alt='mezzanine flooring' />

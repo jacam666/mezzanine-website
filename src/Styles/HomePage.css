@@ -1,12 +1,22 @@
+.homepage-container {
+}
+
 .home-page-image {
     border: 1px solid black;
     height: 90%;
     width: 100%;
+    border-radius: 8px;
 }
 
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 768px) {
     .home-page-image {
-        
+        width: 95% !important;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .home-page-image {
+        height: 40vh;
     }
 }
