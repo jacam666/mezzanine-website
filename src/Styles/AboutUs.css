@@ -33,4 +33,10 @@
     border-radius: 5px;
     color: black;
 }
-
+@media screen and (min-width: 1200px ) {
+    .about-us-description {
+        height: 25vh;
+        padding: auto;
+        font-size: 20px;
+    }
+}

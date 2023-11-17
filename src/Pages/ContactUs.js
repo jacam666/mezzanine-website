@@ -71,7 +71,7 @@ function ContactUs() {
                     <h2>Contact us</h2>
 
                     <MDBInput
-                        className='col-lg-2 col-md-6 col-sm-6'
+                        className='col-lg-2 col-md-6 col-sm-12'
                         label='Name'
                         name='name'
                         value={formData.name}
@@ -80,7 +80,7 @@ function ContactUs() {
                     />
 
                     <MDBInput
-                        className='col-lg-2 col-md-6 col-sm-6'
+                        className='col-lg-2 col-md-6 col-sm-12'
                         type='email'
                         label='Email address'
                         name='email'
@@ -90,7 +90,7 @@ function ContactUs() {
                     />
 
                     <MDBInput
-                        className='col-lg-2 col-md-6 col-sm-6'
+                        className='col-lg-2 col-md-6 col-sm-12'
                         label='Subject'
                         name='subject'
                         value={formData.subject}
@@ -99,7 +99,7 @@ function ContactUs() {
                     />
 
                     <MDBTextArea
-                        className='col-lg-2 col-md-6 col-sm-6'
+                        className='col-lg-2 col-md-6 col-sm-12'
                         wrapperClass='mb-4'
                         label='Message'
                         name='message'
@@ -108,7 +108,7 @@ function ContactUs() {
                     />
 
                     <MDBCheckbox
-                        className='col-lg-2 col-md-6 col-sm-6'
+                        className='col-lg-2 col-md-6 col-sm-12'
                         wrapperClass='d-flex justify-content-center'
                         label='Send me copy'
                         name='sendCopy'
