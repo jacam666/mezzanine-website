@@ -1,2 +1,28 @@
-.contact-container {
+.contact-address-container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+.contact-phone-container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+.contact-email-container {
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+}
+
+.address-info,
+.phone-info,
+.email-info {
+    color: rgb(75, 219, 241);
+
 }
