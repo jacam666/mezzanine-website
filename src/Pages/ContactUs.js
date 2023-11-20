@@ -1,21 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../Styles/ContactUs.css';
 
 function ContactUs() {
-    const [formData, setFormData] = useState({
-        name: '',
-        email: '',
-        message: '',
-    });
 
-    const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('Form data submitted:', formData);
-    };
 
     return (
         <div className='contact-container row m-auto'>
@@ -46,60 +33,23 @@ function ContactUs() {
                     </p>
                 </div>
             </div>
-            <div className='contact-us-container'>
-                <h2>Contact Us</h2>
-                <form id='form' className='text-center' onSubmit={handleSubmit}>
-                    <div className="row m-auto input-bar">
-                        <div className="col-lg-12 col-md-6 col-sm-12">
-                            <label>
-                                Name:
-                                <input
-                                    type="text"
-                                    name="name"
-                                    value={formData.name}
-                                    onChange={handleChange}
-                                    className="form-control"
-                                />
-                            </label>
+                <div className="form-container col-lg-2 col-md-6 col-sm-6">
+                    <form className="form">
+                        <div className="form-group">
+                            <label htmlFor="email">Name</label>
+                            <input type="text" id="Name" name="Name" required="" />
                         </div>
-                    </div>
-                    <div className="row m-auto input-bar">
-                        <div className="col-lg-12 col-md-6 col-sm-12">
-                            <label>
-                                Email:
-                                <input
-                                    type="email"
-                                    name="email"
-                                    value={formData.email}
-                                    onChange={handleChange}
-                                    className="form-control"
-                                />
-                            </label>
+                        <div className="form-group">
+                            <label htmlFor="email">Email</label>
+                            <input type="text" id="email" name="email" required="" />
                         </div>
-                    </div>
-                    <div className="row m-auto input-bar">
-                        <div className="col-lg-12 col-md-6 col-sm-12">
-                            <label>
-                                Message:
-                                <textarea
-                                    name="message"
-                                    value={formData.message}
-                                    onChange={handleChange}
-                                    className="form-control"
-                                />
-                            </label>
+                        <div className="form-group">
+                            <label htmlFor="textarea">How Can We Help You?</label>
+                            <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
                         </div>
-                    </div>
-                    <div className="row m-auto">
-                        <div className="col-lg-12 col-md-6 col-sm-12">
-                            <button type="submit" className="btn btn-primary">
-                                Submit
-                            </button>
-                            {/* <button onClick={() => handleSubmit(formData)}>Submit</button> */}
-                        </div>
-                    </div>
-                </form>
-            </div>
+                        <button className="form-submit-btn" type="submit">Submit</button>
+                    </form>
+                </div>
             <div className='contact-map-container'>
                 <iframe
                     className='contact-map'
