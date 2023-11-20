@@ -4,7 +4,7 @@
     flex-direction: column;
     width: 90vw;
     margin: auto;
-    margin-top: -30px;
+    margin-top: 0px;
 }
 
 .about-us-container::before {
@@ -36,7 +36,7 @@
 }
 @media screen and (min-width: 1200px ) {
     .about-us-description {
-        height: 25vh;
+        height: 40vh;
         padding: auto;
         font-size: 20px;
     }
