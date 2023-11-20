@@ -1,17 +1,5 @@
-.contact-address-container {
-    background-color: whitesmoke;
-    border-radius: 5px;
-    width: 85%;
-    margin: auto;
-    padding: 20px;
-}
-.contact-phone-container {
-    background-color: whitesmoke;
-    border-radius: 5px;
-    width: 85%;
-    margin: auto;
-    padding: 20px;
-}
+.contact-address-container,
+.contact-phone-container,
 .contact-email-container {
     background-color: whitesmoke;
     border-radius: 5px;
@@ -19,10 +7,34 @@
     margin: auto;
     padding: 20px;
 }
+.contact-us-container {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+}
+.input-bar {
+    width: 100%;
+}
 
 .address-info,
 .phone-info,
 .email-info {
-    color: rgb(75, 219, 241);
+    color: rgb(81, 140, 242);
+    font-family: 'Nunito', sans-serif;
+    
+    font-size: 20px;
+}
+.contact-map-container {
+    width: 100%;
+}
 
+.contact-map {
+    margin-top: 30px;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-container {
+        width: 50%;
+    }
 }
