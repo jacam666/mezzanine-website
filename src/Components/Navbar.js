@@ -6,9 +6,9 @@ import '../Styles/Navbar.css'
 
 function MainNavbar() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
-            <Container className='navbar-container'>
-                <Navbar.Brand href="/">Doherty's Mezzanine UK</Navbar.Brand>
+        <Navbar expand="lg" className="bg-body-tertiary navbar-container">
+            <Container>
+                <Navbar.Brand href="/">Master Mezzanine UK</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto d-flex justify-content-between">
