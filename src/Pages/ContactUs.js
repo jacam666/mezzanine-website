@@ -28,6 +28,7 @@ function ContactUs() {
         <div className='contact-container row m-auto'>
             <div>
                 <div className='contact-address-container col-lg-2 col-md-6 col-sm-12 mt-2'>
+                <img src="https://www.freeiconspng.com/uploads/address-icon-25.png" width="100" alt="Hd Icon Address" />
                     <h1>Address</h1>
                     <p className='address-info'>
                         Doherty's Mezzanine Flooring.<br />
@@ -38,12 +39,14 @@ function ContactUs() {
                     </p>
                 </div>
                 <div className='contact-phone-container col-lg-2 col-md-6 col-sm-12 mt-2'>
+                    <img src='/Images/phone-icon-934.png ' width="100" alt="phone icon"/>
                     <h1>Phone</h1>
                     <p className='phone-info'>
                         01525 999999
                     </p>
                 </div>
                 <div className='contact-email-container col-lg-2 col-md-6 col-sm-12 mt-2'>
+                <img src="https://www.freeiconspng.com/uploads/mail-server-icon-png-6.png" width="100" alt="Email Server .ico" />
                     <h1>Email</h1>
                     <p className='email-info'>
                         info@dohertysfloors.co.uk
