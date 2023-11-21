@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../Styles/ContactUs.css';
+import { useLocation } from 'react-router-dom';
 
 function ContactUs() {
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.pathname === '/Pages/ContactUs') {
+            const script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.async = true;
+            script.src = 'https://embed.tawk.to/655c8c2c91e5c13bb5b22fd0/1hfoo739k';
+            script.charset = 'UTF-8';
+            script.setAttribute('crossorigin', '*');
+
+            document.head.appendChild(script);
+
+            
+            return () => {
+                document.head.removeChild(script);
+            };
+        }
+    }, [location.pathname]);
 
 
     return (
@@ -33,23 +53,23 @@ function ContactUs() {
                     </p>
                 </div>
             </div>
-                <div className="form-container col-lg-2 col-md-6 col-sm-6">
-                    <form className="form">
-                        <div className="form-group">
-                            <label htmlFor="email">Name</label>
-                            <input type="text" id="Name" name="Name" required="" />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email">Email</label>
-                            <input type="text" id="email" name="email" required="" />
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="textarea">How Can We Help You?</label>
-                            <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
-                        </div>
-                        <button className="form-submit-btn" type="submit">Submit</button>
-                    </form>
-                </div>
+            <div className="form-container col-lg-2 col-md-6 col-sm-6">
+                <form className="form">
+                    <div className="form-group">
+                        <label htmlFor="email">Name</label>
+                        <input type="text" id="Name" name="Name" required="" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="email">Email</label>
+                        <input type="text" id="email" name="email" required="" />
+                    </div>
+                    <div className="form-group">
+                        <label htmlFor="textarea">How Can We Help You?</label>
+                        <textarea name="textarea" id="textarea" rows="10" cols="50" required=""></textarea>
+                    </div>
+                    <button className="form-submit-btn" type="submit">Submit</button>
+                </form>
+            </div>
             <div className='contact-map-container'>
                 <iframe
                     className='contact-map'
