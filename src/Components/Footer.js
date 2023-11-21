@@ -1,8 +1,11 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-import { FaFacebook } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
+// import { FaFacebook } from "react-icons/fa";
+import { AiFillFacebook } from "react-icons/ai";
+// import { FaTwitter } from "react-icons/fa";
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
+// import { FaInstagramSquare } from "react-icons/fa";
 
 import '../Styles/Footer.css'
 
@@ -13,17 +16,15 @@ export default function Footer() {
                 <div className='me-5 d-none d-lg-block'>
                     <span>Get connected with us on social networks:</span>
                 </div>
-
                 <div>
                     <a href='https://www.facebook.com' className='me-4 text-reset'>
-                        <FaFacebook />
+                        <AiFillFacebook className='icon' style={{ color: '#0866ff' }} />
                     </a>
                     <a href='https://www.twitter.com/' className='me-4 text-reset'>
-                    <FaTwitter />
+                    <AiFillTwitterCircle className='icon' style={{ color: '#1da1f2'}} />
                     </a>
                     <a href='https://www.instagram.com/' className='me-4 text-reset'>
-                    <FaInstagramSquare />
-
+                    <AiFillInstagram className='icon' style={{ color: '#E4405F' }}   />
                     </a>
                 </div>
             </section>

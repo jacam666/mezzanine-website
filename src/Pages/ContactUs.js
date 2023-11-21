@@ -16,7 +16,6 @@ function ContactUs() {
 
             document.head.appendChild(script);
 
-            
             return () => {
                 document.head.removeChild(script);
             };
@@ -26,7 +25,7 @@ function ContactUs() {
 
     return (
         <div className='contact-container row m-auto'>
-            <div className='col-lg-12 col-md-6 col-sm-12'>
+            <div className='col-lg-12 col-md-12 col-sm-12'>
                 <div className='contact-address-container col-lg-2 col-md-6 col-sm-12 mt-2'>
                     <img src="https://www.freeiconspng.com/uploads/address-icon-25.png" width="80" alt="Hd Icon Address" />
                     <h1>Address</h1>
