@@ -5,16 +5,16 @@
     justify-content: left;
     align-items: center;
     height: 100vh;
-    background: #000000;
+    background: #ffffff;
     background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
     overflow: hidden;
 }
 
 .scope {
     position: relative;
-    margin-left: 530px;
+    margin-left: 510px;
     width: 200px;
-    height: 200px;
+    height: 250px;
     transform-style: preserve-3d;
     animation: slid 30s linear infinite;
 }
@@ -61,8 +61,10 @@
     }
 
     .scope {
-        margin-left: 19%; /* Adjust this margin as needed */
-        width: 40%; /* Adjust this width as needed */
+        margin-left: 19%;
+        width: 40%; 
+        height: 350px;
+        width: 250px;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1200px) {
