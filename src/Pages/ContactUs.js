@@ -30,7 +30,7 @@ function ContactUs() {
                     <img src="https://www.freeiconspng.com/uploads/address-icon-25.png" width="80" alt="Hd Icon Address" />
                     <h1>Address</h1>
                     <p className='address-info'>
-                        Doherty's Mezzanine Flooring.<br />
+                        Master Mezzanine Flooring.<br />
                         16 high street,<br />
                         Leighton Buzzard,<br />
                         Lu7 1gg,<br />
