@@ -10,6 +10,10 @@ import { AiFillInstagram } from "react-icons/ai";
 import '../Styles/Footer.css'
 
 export default function Footer() {
+
+    const socialColors = {
+        color: "#010101",
+    }
     return (
         <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
             <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -18,13 +22,13 @@ export default function Footer() {
                 </div>
                 <div>
                     <a href='https://www.facebook.com' className='me-4 text-reset'>
-                        <AiFillFacebook className='icon' style={{ color: '#0866ff' }} />
+                        <AiFillFacebook className='icon' style={ socialColors } />
                     </a>
                     <a href='https://www.twitter.com/' className='me-4 text-reset'>
-                    <AiFillTwitterCircle className='icon' style={{ color: '#1da1f2'}} />
+                    <AiFillTwitterCircle className='icon' style={socialColors} />
                     </a>
                     <a href='https://www.instagram.com/' className='me-4 text-reset'>
-                    <AiFillInstagram className='icon' style={{ color: '#E4405F' }}   />
+                    <AiFillInstagram className='icon' style={socialColors}   />
                     </a>
                 </div>
             </section>
