@@ -3,7 +3,6 @@ import React, { useEffect } from 'react'
 function HomePage() {
 
     useEffect(() => {
-        // Trigger the animation for each text overlay when the component mounts
         const textOverlays = document.querySelectorAll('.text-overlay');
         textOverlays.forEach((textOverlay) => {
             textOverlay.classList.add('animate');
