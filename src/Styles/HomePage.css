@@ -20,8 +20,8 @@
 .text-overlay-1,
 .text-overlay-2 {
     position: absolute;
-    top: 20%;
-    left: 50%;
+    top: 5%;
+    left: 5%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: rgb(14, 13, 13);
@@ -33,18 +33,18 @@
     font-style: normal;
     letter-spacing: 0;
     opacity: 0;
-    transform: translate(-50%);
-    animation: slideIn 2.5s ease-out forwards;
+    /* transform: translate(-50%);
+    animation: slideIn 2.5s ease-out forwards; */
 }
 .text-overlay-2 {
     top: 70%;
 }
 
-.text-overlay.animate {
+/* .text-overlay.animate {
     animation: slideIn 1s ease-out forwards;
-}
+} */
 
-@keyframes slideIn {
+/* @keyframes slideIn {
     from {
         opacity: 0;
         transform: translateX(-100%);
@@ -53,7 +53,7 @@
         opacity: 1;
         transform: translateX(-50%);
     }
-}
+} */
 
 @media screen and (max-width: 768px) {
     .home-page-image {
