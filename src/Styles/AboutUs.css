@@ -1,5 +1,37 @@
+
 .about-us-header {
-    font-size: 30px;
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.about-us-header {
+    padding: 44px;
+    background: linear-gradient(to right,
+            hsl(0, 0%, 30%) 0,
+            hsl(0, 0%, 100%) 10%,
+            hsl(0, 0%, 30%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 5s infinite linear;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+
+    60% {
+        background-position: 600px;
+    }
+
+    100% {
+        background-position: 800px;
+    }
 }
 
 .about-us-container {
@@ -12,23 +44,23 @@
 }
 
 .about-us-container::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     width: auto;
-    background-image: url('/public/Images/Mezzanine-Floor-construction-7-1024x768.jpg');
+    background-image: url("/public/Images/Mezzanine-Floor-construction-7-1024x768.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.3; 
-    z-index: -1; 
+    opacity: 0.3;
+    z-index: -1;
 }
 
 .about-us-description {
-    position: relative; 
+    position: relative;
     z-index: 1;
     margin: auto;
     margin-top: 30px;
@@ -38,14 +70,21 @@
     width: auto;
 }
 
-#paragraph-1 {
-    margin-top: 10px;
-}
 #paragraph-5 {
     margin-bottom: 20px;
 }
 
-@media screen and (min-width: 1200px ) {
+@media screen and (max-width: 768px) {
+    .about-us-header {
+        padding: 30px;
+        font-size: 36px;
+    }
+    #paragraph-1 {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
     .about-us-description {
         height: 35vh;
         padding: auto;
@@ -57,13 +96,14 @@
     }
 }
 
-@media screen and (min-width: 1400px ) {
+@media screen and (min-width: 1400px) {
     .about-us-description {
         height: 35vh;
         padding: auto;
         font-size: 40px;
         width: 90vw;
     }
+
     .about-us-header {
         font-size: 60px;
     }
