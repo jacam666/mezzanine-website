@@ -12,12 +12,13 @@ import '../Styles/Footer.css'
 export default function Footer() {
 
     const socialColors = {
-        color: "#010101",
+        color: "white",
+        backgroundColor: '#010101'
     }
     return (
-        <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-            <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
-                <div className='me-5 d-none d-lg-block'>
+        <MDBFooter style={ socialColors } className='text-center text-lg-start text-muted'>
+            <section className='d-flex justify-content-center justify-content-lg-between p-4'>
+                <div className='me-5 d-none d-lg-block text-light'>
                     <span>Get connected with us on social networks:</span>
                 </div>
                 <div>
@@ -37,7 +38,7 @@ export default function Footer() {
                 <MDBContainer className='text-center text-md-start mt-5'>
                     <MDBRow className='mt-3'>
                         <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>
+                            <h6 className='text-uppercase fw-bold mb-4 text-light'>
                                 <MDBIcon icon="gem" className="me-1" />
                                 Doherty mezzanine Flooring
                             </h6>
@@ -46,8 +47,8 @@ export default function Footer() {
                             </p>
                         </MDBCol>
 
-                        <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+                        <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4 text-light'>
+                            <h6 className='text-uppercase fw-bold mb-4 text-light'>Products</h6>
                             <p>
                                 <a href='#!' className='text-reset'>
                                     Flooring
@@ -60,8 +61,8 @@ export default function Footer() {
                             </p>
                         </MDBCol>
 
-                        <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+                        <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4 text-light'>
+                            <h6 className='text-uppercase fw-bold mb-4 text-light'>Useful links</h6>
                             <p>
                                 <a href='#!' className='text-reset'>
                                     Pricing
@@ -79,7 +80,7 @@ export default function Footer() {
                             </p>
                         </MDBCol>
 
-                        <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+                        <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4 text-light'>
                             <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
                             <p>
                                 <MDBIcon icon="home" className="me-2" />
@@ -100,7 +101,7 @@ export default function Footer() {
                 </MDBContainer>
             </section>
 
-            <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+            <div className='text-center p-4 text-light'>
                 © 2023 Copyright: 
                 <a className='text-reset fw-bold' href='https://www.google.co.uk/'>
                     CamDesigns
