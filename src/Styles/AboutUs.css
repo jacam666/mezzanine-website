@@ -1,3 +1,7 @@
+.about-us-header {
+    font-size: 30px;
+}
+
 .about-us-container {
     position: relative;
     display: flex;
@@ -14,7 +18,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: auto;
     background-image: url('/public/Images/Mezzanine-Floor-construction-7-1024x768.jpg');
     background-size: cover;
     background-position: center;
@@ -26,18 +30,41 @@
 .about-us-description {
     position: relative; 
     z-index: 1;
-    border: 1px solid black;
     margin: auto;
-    height: 26vh;
-    margin-top: 5px;
+    margin-top: 30px;
     padding: 3px;
     border-radius: 5px;
     color: black;
+    width: auto;
 }
+
+#paragraph-1 {
+    margin-top: 10px;
+}
+#paragraph-5 {
+    margin-bottom: 20px;
+}
+
 @media screen and (min-width: 1200px ) {
     .about-us-description {
-        height: 40vh;
+        height: 35vh;
         padding: auto;
-        font-size: 20px;
+        font-size: 28px;
+        width: 90vw;
+    }
+    .about-us-header {
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1400px ) {
+    .about-us-description {
+        height: 35vh;
+        padding: auto;
+        font-size: 40px;
+        width: 90vw;
+    }
+    .about-us-header {
+        font-size: 60px;
     }
 }
