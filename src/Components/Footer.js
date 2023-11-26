@@ -93,9 +93,6 @@ export default function Footer() {
                             <p>
                                 <MDBIcon icon="phone" className="me-3" /> + 044 999 999 99
                             </p>
-                            <p>
-                                <MDBIcon icon="print" className="me-3" /> + 044 999 999 89
-                            </p>
                         </MDBCol>
                     </MDBRow>
                 </MDBContainer>

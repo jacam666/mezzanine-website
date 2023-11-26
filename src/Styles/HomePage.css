@@ -76,16 +76,7 @@
         transform: translate(-50%, 0);
     }
 }
-
-@media screen and (min-width: 1200px) {
-    .home-page-image {
-        height: 50vh;
-    }
-    .text-overlay-1 {
-        width: 90%;
-    }
-}
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
     .home-page-image {
         height: 70vh;
     }
@@ -96,5 +87,26 @@
     .text-overlay-2 {
         font-size: 3rem;
         top: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .home-page-image {
+        height: 50vh;
+    }
+    .text-overlay-1 {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .home-page-image {
+        height: 50vh;
+    }
+    .text-overlay-1 {
+        width: 90%;
+        top: 18%;
+    }
+    .text-overlay-2 {
+        width: 90%;
     }
 }
